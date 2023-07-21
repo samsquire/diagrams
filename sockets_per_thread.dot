@@ -1,0 +1,30 @@
+digraph G {
+  socket_1 [label="socket(1)"];
+  socket_2 [label="socket(2)"];
+  socket_3 [label="socket(3)"];
+
+  thread_1 [label="thread(1)"];
+  thread_2 [label="thread(2)"];
+  thread_3 [label="thread(3)"];
+
+  
+  socket_1 [label="socket(1)"];
+  socket_2 [label="socket(2)"];
+  socket_3 [label="socket(3)"];
+  socket_4 [label="socket(4)"];
+  socket_5 [label="socket(5)"];
+  socket_6 [label="socket(6)"];
+
+  thread_1_socket -> thread_1;
+  thread_1_socket -> socket_1;
+  thread_1_socket -> socket_2;
+
+  thread_2_socket -> thread_2;
+  thread_2_socket -> socket_3;
+  thread_2_socket -> socket_4;
+
+  thread_3_socket -> thread_3;
+  thread_3_socket -> socket_5;
+  thread_3_socket -> socket_6;
+
+}
