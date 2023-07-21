@@ -1,0 +1,11 @@
+digraph G {
+    raft_data_replica1 -> raftleader [label="write timestamp"];
+    raft_data_replica2 -> raftleader [label="write timestamp"];
+    raft_data_replica3 -> raftleader [label="write timestamp"];
+    raft_data_replica4 -> raftleader [label="write timestamp"];
+
+    raftleader -> raft_data_replica1 [label="append entries"];
+    raftleader -> raft_data_replica2 [label="append entries"];
+    raftleader -> raft_data_replica3 [label="append entries"];
+    raftleader -> raft_data_replica4 [label="append entries"];
+}
