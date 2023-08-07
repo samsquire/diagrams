@@ -1,0 +1,4 @@
+digraph G {
+  thread -> safepoint;
+  safepoint -> garbagecollection
+}

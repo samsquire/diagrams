@@ -1,0 +1,5 @@
+digraph G {
+  thread1 -> sharedresource;
+  thread2 -> sharedresource;
+  thread3 -> sharedresource;
+}
